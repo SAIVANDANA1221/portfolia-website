@@ -1,164 +1,258 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Code</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandana's Portfolio</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="navbar-container container">
-        <div>
-          <h1 class="navbar-brand">Unukonda Saivandana</h1>
-        </div>
-        <ul class="menu-items">
-          <li><a href="#about">About</a></li>
-          <li><a href="#my-works">Portfolio</a></li>
-          <li><a href="#contact-me">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="home-content" id="home-page">
-      <div class="name">
-        <h1>Hi, I'm Vandana</h1>
-        <p>A Web Developer in training.</p>
-      </div>
-      <div class="angle-down-icon">
-        <a href="#about"><i class="fas fa-angle-down"></i></a>
-      </div>
-    </div>
-  </header>
-  <section class="about-me" id="about">
-    <div class="container">
-      <div class="about-content">
-        <div class="left-content">
-          <div>
-            <h1 class="about-heading">About Me</h1>
-          </div>
-          <img src="https://tender-supernova-1af.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F7602b21b-c179-4e21-b70b-6041ef4470b0%2F486a1e28-d7e2-4649-bc36-0b053cf29d23%2FWhatsApp_Image_2023-11-29_at_19.19.02_a8a29f4a.jpg?table=block&id=ace01882-9822-45bb-8975-edc73dd8105d&spaceId=7602b21b-c179-4e21-b70b-6041ef4470b0&width=380&userId=&cache=v2" alt="image" />
-          <p>
-            I'm Currently pursuing my Btech in the domain of Computer Science(2021-2024) in Guru Nanak Institutions Technical Campus.
-            I'm Passionate about web development, eager to explore the dynamic world of coding and design.
-            Excited to create immersive digital experiences and contribute to the evolving web landscape.
-          </p>
-          <div class="work-arrow">
-            <p>
-              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-            </p>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="right-content">
-            <div>
-              <h1 class="skills-heading">My Skills</h1>
-            </div>
-            <div class="skills-bar">
-              <div class="bar">
-                <div class="info">
-                  <span>HTML</span>
-                </div>
-                <div class="progress-line"><span class="html"></span></div>
-                <div class="bar">
-                  <div class="info">
-                    <span>CSS</span>
-                  </div>
-                  <div class="progress-line"><span class="css"></span></div>
-                  <div class="bar">
-                    <div class="info">
-                      <span>BOOTSTRAP</span>
-                    </div>
-                    <div class="progress-line"><span class="bootstrap"></span></div>
-                    <div class="bar">
-                      <div class="info">
-                        <span>JAVASCRIPT</span>
-                      </div>
-                      <div class="progress-line"><span class="javascript"></span></div>
-                      <div class="bar">
-                        <div class="info">
-                          <span>C Programming</span>
-                        </div>
-                        <div class="progress-line"><span class="c"></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="work-arrow-2">
-              <p>
-                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="my-works">
-    <div class="portfolio">
-      <div class="proj-heading">
-        <h1>Portfolio</h1>
-      </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-    
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>PG Life</h2>
-            <p>Build Using HTML,CSS,JS,bootstrap,php,React,Mysql</p>
-            <button><a href="https://github.com/SAIVANDANA1221/pg_life" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
-        </div>
-    
-        <div class="proj-2">
-          <div class="proj2-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <h2>Weather Website</h2>
-            <p>Build Using HTML,CSS,JAVASCRIPT</p>
-            <button><a href="https://github.com/SAIVANDANA1221/weather-website" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
 
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo"></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Certifications</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#Activities">Activities</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1><span>Sai</span> Vandana</h1>
+            <p>
+                I'm Currently pursuing my Btech in the domain of Computer Science(2021-2025) in Guru Nanak Institutions Technical Campus. I'm Passionate about web development and working on powerapps, eager to explore the dynamic world of coding and design. Excited to create immersive digital experiences and contribute to the evolving web landscape.
+            </p>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/_.gudiya._21/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.facebook.com/share/1549ZQAuQG/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook'></i></a><a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="http://www.linkedin.com/in/unukonda-SAIVANDANA" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1WLc5dl_Z0ztWLZ-KhCQouWKeCPekSX29/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
         </div>
-        <div class="more-work">
-          <p>
-            More
-          </p>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-code'></i>
+                    <h3>Powerapps Developer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Canva Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <h3>Python Developer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
         </div>
-      </div>
+
+        <div class="home-img">
+        <img src="portfolio.jpg" alt="">
     </div>
-  </section>
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i> vandanaunukonda1890@gmail.com
-        </p>
-        <p class="links">Or find me on:</p>
-        <a href="http://www.linkedin.com/in/unukonda-saivandana" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        <a href="https://github.com/SAIVANDANA1221" target="blank"><i class="fab fa-github"></i> Github</a>
-        <a href="https://www.instagram.com/_.gudiya._21/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
-      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="portfolio.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Self-motivated and hardworking under-graduate seeking an opportunity to work in a challenging environment to prove
+my skills and utilize my knowledge for the growth of the organization.
+            </p>
+            <p>
+                Moreover, I have strong interest in python programming that dedicates my time and effort in mastering it’s applications like frontend development and also I know basics in MySQL Database.
+                I consider myself a focused person ,I always works towards my goals in very efficient manner. I’m a team player and remain very optimistic in tough times.
+                Despite of learning, I took on the role as a teaching assistant in a python student developing program where I actively supported students in their learning journey.
+
+
+            </p>
+            <!--<a href="#" class="btn">View</a>-->
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Certifications</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <h3>Web Development</h3>
+                <p>Developed a responsive PG accommodation web app using HTML, CSS, JavaScript, Bootstrap, and PHP.
+                    Implemented dynamic features for user authentication, booking management, and interactive UI.Gained hands-on experience in full-stack development and web deployment.</p>
+                <a href="https://trainings.internshala.com/view_certificate/2bqign3bpbx/dkrfjoz161z/" target="_blank" class="btn">View</a>
+            </div>
+            <div class="services-box">
+                <h3>Salesforce</h3>
+                <p>Over the course of this internship, I have:
+                    Mastered Salesforce Fundamentals 
+                    Organizational Setup 
+                    Relationship & Process Automation 
+                    Types Of Flows & Security 
+                    Apex, Testing & Debugging 
+                    VS Code & API
+                    Proud to have earned these Super Badges: 
+                    Apex Specialist 
+                 Process Automation Specialist 
+                    Developer Super Set</p>
+                <a href="https://www.linkedin.com/posts/unukonda-saivandana_salesforce-developer-virtual-internship-activity-7213943642078470145-L1jE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-Q9cABRjGrcz0wisSBcB8TcWgsuNJobzE" target="_blank" class="btn">View</a>
+            </div>
+            <div class="services-box">
+                <h3>Python Programming</h3>
+                <p>I have completed my 60-day Python Programming Internship with YBI Foundation. During this internship, I covered essential modules such as Python for Everyone, Data Structures & Algorithms. I also shared my work on Kaggle and GitHub, leading up to a final project submission. </p>
+                <a href="https://www.linkedin.com/posts/unukonda-saivandana_python-programming-course-activity-7213504566674219008-asQR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-Q9cABRjGrcz0wisSBcB8TcWgsuNJobzE" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="p1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Jarvis</h4>
+                    <p>Jarvis, a sophisticated personal assistant web application </p>
+                    <a href="https://github.com/SAIVANDANA1221/Jarvis" target="_blank" ><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Text-Visual-Separator</h4>
+                    <p>Image analysis to identify text and visual elements</p>
+                    <a href="https://github.com/SAIVANDANA1221/Text-Visual-Separator" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p3.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Face Filters</h4>
+                    <p>A fun face filter application built with Python, featuring real-time bunny ears and flower crown effects!</p>
+                    <a href="https://github.com/SAIVANDANA1221/face-filters" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p4.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Stack Overflow Clone</h4>
+                    <p>A full-stack MERN application replicating Stack Overflow, enabling users to ask questions, post answers, and engage in discussions.</p>
+                    <a href="https://github.com/SAIVANDANA1221/Stack-Overflow" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p5.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>todo-List</h4>
+                    <p>
+                        Crafting the personalized To-Do List using HTML, CSS, and JavaScript! 📝✨</p>
+                    <a href="https://github.com/SAIVANDANA1221/todo-list" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="p6.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Weather website</h4>
+                    <p>Developed a sleek weather website with HTML, CSS, and JavaScript for a personalized forecast experience!</p>
+                    <a href="https://github.com/SAIVANDANA1221/weather-website" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <section class="Activities" id="Activities">
+    <div class="testimonial-container">
+        <h2 class="heading"><span>Extra Curricular Activities</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <h3>Teaching Assistant</h3>
+                        <p>Worked as a Teaching Assistant in the Python Student Development Program, helping students understand core concepts and improve their coding skills. Assisted in solving programming challenges and guided discussions to enhance learning. Provided mentorship and support, fostering a collaborative environment. Developed strong leadership and communication skills through teaching. Contributed to the growth of aspiring developers by sharing knowledge and expertise.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <h3>Seminar Presentation</h3>
+                        <p>Secured 1st place in a Seminar Presentation on the real-time topic “Augmented Reality vs Virtual Reality”, conducted by Guru Nanak Institutions Technical Campus. Delivered an in-depth analysis comparing AR and VR technologies, their applications, and future impact. Demonstrated strong research, presentation, and public speaking skills. Engaged the audience with insightful discussions and real-world examples. Recognized for clarity, technical understanding, and effective communication.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <h3>Class Representative Role</h3>
+                        <p>Elected as Class Representative for all four years of B.Tech, acting as a key link between students and faculty. Took responsibility for communicating important updates, addressing student concerns, and ensuring a smooth academic experience. Organized meetings, coordinated class activities, and facilitated discussions to enhance collaboration. Played a vital role in maintaining discipline, teamwork, and a positive learning environment. Strengthened leadership, communication, and problem-solving skills through active engagement.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- JAVASCRIPT -->
-  <script src="app.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
 </body>
 
 </html>
